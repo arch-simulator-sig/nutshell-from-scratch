@@ -27,6 +27,7 @@
 
 // emulated memory size (Byte)
 // #define EMU_RAM_SIZE (256 * 1024 * 1024UL) // 256 MB
+//TODO: 这里需要根据电脑情况调整
 #define EMU_RAM_SIZE (8 * 1024 * 1024 * 1024UL) // 8 GB
 
 // first valid instruction's address, difftest starts from this instruction
