@@ -34,7 +34,7 @@ module ram_2r1w
     input [WIDTH-1:0] dmem_addr,
     input [WIDTH-1:0] dmem_rdata,
     input [WIDTH-1:0] dmem_wddr,
-    input [WIDTH-1:0] imem_wmask,
+    input [WIDTH-1:0] dmem_wmask,
     input dmem_wen
 );
     
