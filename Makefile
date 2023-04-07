@@ -5,6 +5,9 @@ export PATH := $(PATH):$(abspath ./utils)
 # test:
 # 	mill -i __.test
 
+emu: verilog
+	cd difftest &&  $(MAKE) emu
+
 verilog:
 	$(call git_commit, "generate verilog")
 	mkdir -p $(BUILD_DIR)
@@ -28,10 +31,9 @@ checkformat:
 clean:
 	-rm -rf $(BUILD_DIR)
 
-.PHONY: test verilog help compile bsp reformat checkformat clean
+.PHONY: test verilog help compile bsp reformat checkformat clean emu
 
 sim:
-	$(call git_commit, "sim RTL") # DO NOT REMOVE THIS LINE!!!
-	@echo "Write this Makefile by yourself."
+
 
 # include ../Makefile
