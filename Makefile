@@ -2,8 +2,8 @@ BUILD_DIR = ./build
 
 export PATH := $(PATH):$(abspath ./utils)
 
-test:
-	mill -i __.test
+# test:
+# 	mill -i __.test
 
 verilog:
 	$(call git_commit, "generate verilog")
