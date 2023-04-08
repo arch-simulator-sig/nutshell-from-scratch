@@ -27,14 +27,14 @@ module ram_2r1w
     input clk,
 
     input imem_en,
-    input [WIDTH-1:0] imem_addr,
-    input [WIDTH-1:0] imem_data,
+    input  [WIDTH-1:0] imem_addr,
+    output [WIDTH-1:0] imem_data,
 
     input dmem_en,
-    input [WIDTH-1:0] dmem_addr,
-    input [WIDTH-1:0] dmem_rdata,
-    input [WIDTH-1:0] dmem_wddr,
-    input [WIDTH-1:0] dmem_wmask,
+    input  [WIDTH-1:0] dmem_addr,
+    output [WIDTH-1:0] dmem_rdata,
+    input  [WIDTH-1:0] dmem_wdata,
+    input  [WIDTH-1:0] dmem_wmask,
     input dmem_wen
 );
     
